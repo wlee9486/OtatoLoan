@@ -1,0 +1,164 @@
+/* 아코디언 부분 */
+	
+@font-face {
+    font-family: 'LINESeedKR-Bd';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Bd.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+.attribution { 
+  font-size: 13px; text-align: center; 
+  background-color: hsl(240, 5%, 91%);
+  padding: 8px 0 5px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+.attribution a { color: hsl(228, 45%, 44%); }
+
+/* global */
+/*================================================*/
+
+
+/* generics */
+/*================================================*/
+
+.content-cc{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* FAQ card */
+/*================================================*/
+
+.faq-card {
+
+  background-color: #fff;
+  border-radius: 20px;
+
+  max-width: 310px;
+  margin-top: 90px;
+  
+  box-shadow: 0px 60px 50px -25px rgba(0, 0, 0, 0.35);
+}
+
+/* FAQ card: imagenes */
+/*================================================*/
+
+
+.faq-ilustrations{
+  position: relative;
+}
+
+.faq-ilustrations .mobile.ilust{
+  position: absolute;
+  top:-110px;
+  left:-30px;
+  right: 0;
+}
+
+.mobile{
+  display: block;
+  margin: 0 auto;
+}
+
+
+/* FAQ card: main */
+/*================================================*/
+
+.faq-content {
+  padding: 9px 25px 3rem; 
+}
+
+.faq-content h1 {
+  font-size: 32px;
+  text-align: center;
+  color: var(--primary-dark-color);
+}
+
+.faq-accordion {
+  padding: 8px 0;
+  border-bottom: 1px solid hsl(240, 5%, 91%);
+}
+
+
+/* FAQ card: main title */
+/*================================================*/
+
+/* checkbox tgg-title*/
+input.tgg-title {
+  appearance: unset;
+  all:unset;
+}
+
+.faq-accordion-title label{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.faq-accordion-title h2{
+  font-size: 23px /*var(--font-size)*/;
+  font-weight: 400;
+}
+
+.faq-accordion-title span{
+  margin-left: auto;
+  transition: transform .4s ease-in-out;
+}
+
+.faq-accordion-content span{
+	color: red;
+	
+	
+}
+
+/* FAQ card: main content */
+/*================================================*/
+
+.faq-accordion-content {
+  color: #6d6d6d;
+  overflow: hidden;
+  max-height: 100;
+  transition: max-height .4s ease-in-out;
+}
+
+
+/* Effects */
+/*================================================*/
+
+/* main title, accordion title effects */
+
+.faq-accordion-title:hover h2{
+  color: var(--primary-soft-color)
+}
+
+/* onclick "" */
+.faq-accordion .tgg-title:checked + div>label>h2 {
+  font-weight: 700;
+}
+
+.faq-accordion .tgg-title:checked + div>label>span {
+  will-change: transform;
+  transform: rotate(180deg);
+}
+
+/* main content, acordion text effect */
+
+.faq-accordion .tgg-title:checked ~ .faq-accordion-content{
+  will-change: max-height;
+  max-height: 80px;
+}
+

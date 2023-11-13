@@ -1,0 +1,404 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+@font-face {
+    font-family: 'LINESeedKR-Bd';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Bd.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.wrapper {
+
+    justify-content: center;
+    align-content: center;
+    padding-bottom: 50px;
+    background: #fff;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.125);
+}
+
+.wrapper .title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.wrapper .form {
+    width: 100%;
+}
+
+.wrapper .form .inputfield {
+    padding-top: 20px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+
+}
+
+.wrapper .form .inputfield1 label,
+.wrapper .form .inputfield label {
+    width: 150px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #595959;
+}
+
+
+.wrapper .form .inputfield1 .input,
+.wrapper .form .inputfield .input,
+.wrapper .form .inputfield .textarea {
+    width: 80%;
+    outline: none;
+    border: 1px solid #d5dbd9;
+    font-size: 15px;
+    padding: 8px 10px;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+
+}
+
+.wrapper .form .phonefield .input1 {
+    outline: none;
+    border: 1px solid #d5dbd9;
+    font-size: 15px;
+    padding: 8px 10px;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+
+}
+
+
+.wrapper .form .inputfield .textarea {
+    width: 80%;
+    height: 200px;
+    resize: none;
+}
+
+.wrapper .form .phonefield .custom_select {
+    display: inline-block;
+    width: 100%;
+    height: 37px;
+
+}
+
+.wrapper .form .phonefield .custom_select:before {
+    content: "";
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    border: 8px solid;
+    border-color: #d5dbd9 transparent transparent transparent;
+    pointer-events: none;
+    text-align: center;
+}
+
+.wrapper .form .phonefield .custom_select select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    width: 15%;
+    height: 100%;
+    border: 0px;
+    padding: 8px 10px;
+    font-size: 15px;
+    border: 1px solid #d5dbd9;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.wrapper .form .inputfield1 .input:focus,
+.wrapper .form .inputfield .input:focus,
+.wrapper .form .phonefield .input1:focus,
+.wrapper .form .inputfield .textarea:focus,
+.wrapper .form .inputfield .custom_select select:focus {
+    border: 1px solid #fec107;
+
+}
+
+.wrapper .form .inputfield p {
+    padding-left: 30px;
+    font-size: 16px;
+    color: #606060;
+    font-weight: 700;
+}
+
+
+.wrapper .form .inputfield .check { /* ï¿½Ç¹ï¿½ ï¿½ç°¢ Ã¼Å©ï¿½Ú½ï¿½ */
+    width: 25px;
+    height: 45px;
+    position: relative;
+    display: block;
+    cursor: pointer;
+    padding-right: 10px;
+    padding-left: 0px;
+}
+
+.wrapper .form .inputfield .check input[type="checkbox"] {
+    position: relative;
+    top: 0;
+    left: 0;
+    opacity: 0;
+
+}
+
+.wrapper .form .inputfield .check .checkmark { /* ï¿½Ç¹ï¿½ ï¿½ç°¢ Ã¼Å©ï¿½Ú½ï¿½ Å©ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ */
+    width: 25px;
+    height: 25px;
+    border: 2px solid #fec107;
+    display: block;
+    position: relative;
+}
+
+.wrapper .form .inputfield .check .checkmark:before {
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: 2px;
+    width: 20px;
+    height: 2px;
+    border: 2px solid;
+    border-color: transparent transparent #fff #fff;
+    transform: rotate(-45deg);
+    display: none;
+}
+
+.wrapper .form .inputfield .check input[type="checkbox"]:checked ~ .checkmark {
+    background: #fec107;
+}
+
+.wrapper .form .inputfield .check input[type="checkbox"]:checked ~ .checkmark:before {
+    display: block;
+}
+
+.wrapper .form .inputfield .btn {
+    width: 50%;
+    font-weight: 700;
+    font-size: 17px;
+    border: 0px;
+    background: #fec107;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 10px;
+    outline: none;
+    height: 50px;
+    text-align: center;
+    vertical-align: center;
+    max-width: 250px;
+}
+
+
+/* .btn-container ï¿½ï¿½Å¸ï¿½ï¿½ */
+.btn-container {
+    padding-left: 200px;
+    gap: 10px;
+}
+
+.btn-container2 { /* update.jsp ï¿½ï¿½Å¸ï¿½ï¿½ */
+    padding-left: 250px;
+    gap: 10px;
+}
+
+
+.btn-container3 { /* detail.jsp ï¿½ï¿½Å¸ï¿½ï¿½ */
+    padding-left: 120px;
+    gap: 10px;
+}
+
+
+/* .btn ï¿½ï¿½Å¸ï¿½ï¿½ */
+.btn {
+    gap: 10px;
+    padding-left: 150px;
+    font-weight: bold;
+    font-size: 17px;
+    border: 0px;
+    background: #fec107;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 10px;
+    outline: none;
+    height: 60px;
+    text-align: center;
+    vertical-align: center;
+    /* ï¿½ï¿½Æ° ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 10pxï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ */
+}
+
+.wrapper .form .inputfield .btn:hover {
+    background: #ffd658;
+}
+
+.wrapper .form .phonefield .btn {
+    width: 100%;
+    padding: 8px 10px;
+    font-size: 15px;
+    border: 0px;
+    background: #fec107;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 10px;
+    outline: none;
+    height: 10px;
+}
+
+
+.wrapper .form .inputfield1 {
+    padding-top: 10px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    height: 150px;
+
+
+}
+
+.wrapper .form .inputfield:last-child {
+    margin: 10px;
+}
+
+@media (max-width: 420px) {
+    .wrapper .form .inputfield,
+    .wrapper .form .inputfield1 {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+.wrapper .form .inputfield1 label,
+.wrapper .form .inputfield label {
+    font-family: 'Playfair Display';
+    margin-bottom: 5px;
+}
+
+.wrapper .form .inputfield1.terms,
+.wrapper .form .inputfield.terms {
+    flex-direction: row;
+}
+
+
+@media (max-width: 420px) {
+    .wrapper .form .phonefield {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .wrapper .form .phonefield label {
+        margin-bottom: 5px;
+    }
+
+    .wrapper .form .phonefield.terms {
+        flex-direction: row;
+    }
+}
+
+
+.radio-buttons {
+    display: flex;
+    gap: 15px; /* ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Æ°ï¿½ï¿½ ï¿½Û¾ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ */
+    align-items: center; /* ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Æ°ï¿½ï¿½ ï¿½Û¾ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ */
+}
+
+/* ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Æ° ï¿½ï¿½Å¸ï¿½ï¿½ */
+.radio-buttons input[type="radio"] {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+/* ï¿½Û¾ï¿½ ï¿½ï¿½Å¸ï¿½ï¿½ */
+.radio-item {
+    display: flex;
+    align-items: center;
+}
+
+.radio-label {
+    font-size: 18px;
+    font-weight: 700;
+    font-weight: bold;
+    color: #595959;
+}
+
+.inputfield .input-group {
+    display: flex;
+    align-items: center; /* ï¿½ï¿½Ç²ï¿½Ú½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Æ® ï¿½ï¿½Æ°ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ */
+}
+
+.inputfield .input-group .input {
+    margin-right: 10px;
+}
+
+.inputfield .custom_select .input1 {
+    margin-right: 10px;
+    margin-left: 10px;
+    width: 30%;
+}
+
+
+.wrapper .form .inputfield input[type="radio"] {
+    width: 20px;
+    height: 20px;
+    padding-right: 10px;
+}
+
+.wrapper .form .inputfield input[type="radio"]:checked {
+    background-color: #fed932;
+}
+
+/* ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ */
+
+/* ï¿½Þ´ï¿½ï¿½ï¿½ï¿½ï¿½È£ ï¿½ï¿½Ã¼ ï¿½ï¿½ï¿½ï¿½ */
+/* ï¿½Þ´ï¿½ï¿½ï¿½ï¿½ï¿½È£ ï¿½ï¿½Ã¼ ï¿½ï¿½ï¿½ï¿½ */
+.phonefield {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px; /* ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ */
+}
+
+.phonefield select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    width: 15%;
+    height: 100%;
+    border: 1px solid #d5dbd9;
+    border-radius: 3px;
+    text-align: center;
+    padding: 8px 10px;
+    font-size: 15px;
+    margin-right: 5px; /* ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ */
+}
+
+.phonefield .input1 {
+    width: 70%;
+    outline: none;
+    border: 1px solid #d5dbd9;
+    font-size: 15px;
+    padding: 8px 10px;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+.phonefield .input1:focus {
+    border: 1px solid #fec107;
+}
+
+
+.wrapper .form .phonefield label {
+    width: 200px;
+    color: #595959;
+    margin-right: 10px;
+    font-size: 16px;
+
+    font-weight: bold;
+    font-weight: 700;
+}
