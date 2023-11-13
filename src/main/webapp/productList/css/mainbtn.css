@@ -1,0 +1,273 @@
+@charset "UTF-8";
+
+.main-section2 .main-layout {
+    padding: 0 30px;
+}
+
+.product-select-tab {
+    position: relative;
+    padding-top: 130px;
+}
+
+margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    font-family: 'Noto Sans KR';
+}
+
+.product-select-tab > li .tab-title { /* 대출상품, 예적금상품 버튼 */
+    position: absolute;
+    top: 0;
+    left: 50%;
+    display: inline-block;
+    width: 200px;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 300;
+    color: #222;
+    background: #f0f0f0;
+    border-radius: 24px;
+    transition: 0.3s all;
+}
+
+
+
+.product-select-tab .select-tab-section {
+    display: none;
+}
+
+.select-tab-cont {
+    margin-bottom: 96px;
+    min-height: 223px;
+}
+
+.select-tab-cont .tab-section1 {
+    float: left;
+    width: 396px;
+    padding-left: 20px;
+}
+
+.tab-section1 .tab-section-top {
+    margin-bottom: 27px;
+}
+
+.tab-section1 .tab-section-top .qa-select-txt p { /* 고객님의 직업 부분글씨 */
+    font-family: 'apro-R';
+    font-size: 44px;
+    line-height: 60px;
+    font-weight: 300;
+    color: #000;
+    letter-spacing: -0.025em;
+}
+
+
+.txt-hide {
+    text-indent: -9999em;
+    font-size: 0;
+    overflow: hidden;
+    opacity: 0;
+}
+
+.tab-section2 { /* 버튼3개 영역 */
+    float: left;
+    width: 744px;
+    margin-top: -17px;
+}
+
+.tab-section2 .tab-select-slide { /* 버튼3개 영역 */
+    width: 760px;
+    overflow: hidden;
+}
+
+.slick-slider {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-slider .slick-track, .slick-slider .slick-list {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.slick-list {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+element.style {
+    opacity: 1;
+    width: 2280px;
+    transform: translate3d(0px, 0px, 0px);
+}
+
+.slick-slider .slick-track, .slick-slider .slick-list {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.slick-slide {
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+
+
+element.style {
+    width: 100%;
+    display: inline-block;
+}
+
+
+.tab-section2 .tab-select-slide .slide-cont {
+    float: left;
+    width: 760px;
+    padding: 17px 0;
+    padding-right: 16px;
+}
+
+.product1 .tab-select-slide .slick-slide:first-child .slide-cont .product-select-list {
+    text-align: right;
+}
+
+
+.product-select-list {
+    font-size: 0;
+    text-align: center;
+}
+
+
+.product-select-list > li:first-child {
+    margin-left: 0;
+}
+
+.product-select-list > li {
+    display: inline-block;
+    margin-left: 8px;
+}
+
+element.style {
+    width: 760px;
+}
+
+.slick-initialized .slick-slide {
+    display: block;
+}
+
+.slick-slide {
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+
+element.style {
+    width: 100%;
+    display: inline-block;
+}
+
+.tab-section2 .tab-select-slide .slide-cont {
+    float: left;
+    width: 760px;
+    padding: 17px 0;
+    padding-right: 16px;
+}
+
+.product-select-list {
+    font-size: 0;
+    text-align: center;
+}
+
+.product-select-list > li:first-child {
+    margin-left: 0;
+}
+
+.product-select-list > li {
+    display: inline-block;
+    margin-left: 8px;
+}
+
+.product-select-list > li.product-select1-4 .btn-product-select {
+    background-image: url(../../images/renewal/main/ico_product_select1_4_off.png);
+}
+
+
+.product-select-list .btn-product-select {
+    position: relative;
+    width: 180px;
+    height: 200px;
+    vertical-align: top;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: center 60px;
+    border: 1px solid #d9d9d9;
+    border-radius: 7px;
+    transition: 0.3s all;
+    /* outline: none; */
+}
+
+.product-select-list .btn-product-select .txt-sel {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 130px;
+    font-size: 18px;
+    font-weight: 300;
+    color: #222;
+    letter-spacing: -0.05em;
+}
+
+
+.product-select-list > li {
+    display: inline-block;
+    margin-left: 8px;
+}
+
+.product-select-list > li.product-select1-5 .btn-product-select {
+    background-image: url(../../images/renewal/main/ico_product_select1_5_off.png);
+}
+
+.product-select-list .btn-product-select .txt-sel { /* 직장인 주부 글씨 */
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 130px;
+    font-size: 18px;
+    font-weight: 300;
+    color: #222;
+    letter-spacing: -0.05em;
+}
+

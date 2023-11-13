@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@font-face {
+    font-family: 'LINESeedKR-Bd';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Bd.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'LINESeedKR-Bd', sans-serif;
+}
+body{
+ 
+  padding: 0 10px;
+}
+.wrapper{
+
+
+  background: #fff;
+  margin: 20px auto;
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.125);
+  padding: 30px;
+}
+
+.wrapper .title{
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.wrapper .form{
+  width: 100%;
+}
+.wrapper .form .inputfield1{
+	padding-top:10px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  
+  
+  
+}
+
+
+
+.wrapper .form .inputfield{
+	padding-top:10px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  
+}
+.wrapper .form .inputfield1 label,
+.wrapper .form .inputfield label{
+   width: 200px;
+   color: #595959;
+   margin-right: 10px;
+  font-size: 16px;
+  font-style: bold;
+  font-weight: 700;
+}
+
+
+.wrapper .form .inputfield1 .input,
+.wrapper .form .inputfield .input,
+.wrapper .form .inputfield .textarea{
+  width: 100%;
+  outline: none;
+  border: 1px solid #d5dbd9;
+  font-size: 15px;
+  padding: 8px 10px;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+  
+}
+
+.wrapper .form .inputfield1 .input{
+  outline: none;
+  border: 1px solid #d5dbd9;
+  font-size: 15px;
+  padding: 8px 10px;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+  height: 250px;
+  
+}
+
+
+.wrapper .form .phonefield .input1{ 
+  outline: none;
+  border: 1px solid #d5dbd9;
+  font-size: 15px;
+  padding: 8px 10px;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+  
+}
+
+
+.wrapper .form .inputfield .textarea{
+  width: 100%;
+  height: 125px;
+  resize: none;
+}
+
+.wrapper .form .phonefield .custom_select{
+  display: inline-block;
+  width: 100%;
+  height: 37px;
+   
+}
+
+.wrapper .form .phonefield .custom_select:before{
+  content: "";
+  position: absolute;
+  top: 12px;
+  right: 10px;
+  border: 8px solid;
+  border-color: #d5dbd9 transparent transparent transparent;
+  pointer-events: none;
+   text-align: center;
+}
+
+.wrapper .form .phonefield .custom_select select{
+  -webkit-appearance: none;
+  -moz-appearance:   none;
+  appearance:        none;
+  outline: none;
+  width: 15%;
+  height: 100%;
+  border: 0px;
+  padding: 8px 10px;
+  font-size: 15px;
+  border: 1px solid #d5dbd9;
+  border-radius: 3px;
+  text-align: center;
+}
+
+
+.wrapper .form .inputfield .input:focus,
+.wrapper .form .inputfield1 .input:focus,
+.wrapper .form .inputfield .textarea:focus,
+.wrapper .form .inputfield .custom_select select:focus{
+  border: 1px solid #fec107;
+  
+}
+.wrapper .form .inputfield1 p,
+.wrapper .form .inputfield p{
+   font-size: 14px;
+   color: #606060;
+  font-style: semi-bold;
+}
+
+.wrapper .form .inputfield1 .check
+.wrapper .form .inputfield .check{ /* �ǹ� �簢 üũ�ڽ� */
+  width: 20px;
+  height: 20px;
+  position: relative;
+  display: block;
+  cursor: pointer;
+  padding-right: 10px;
+  padding-left: 0px;
+}
+.wrapper .form .inputfield .check input[type="checkbox"]{
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  
+}
+.wrapper .form .inputfield .check .checkmark{
+ width: 20px;
+  height: 20px;
+  border: 1px solid #fec107;
+  display: block;
+  position: relative;
+}
+.wrapper .form .inputfield .check .checkmark:before{
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 2px;
+  width: 20px;
+  height: 2px;
+  border: 1px solid;
+  border-color: transparent transparent #fff #fff;
+  transform: rotate(-45deg);
+  display: none;
+}
+.wrapper .form .inputfield .check input[type="checkbox"]:checked ~ .checkmark{
+  background: #fec107;
+}
+
+.wrapper .form .inputfield .check input[type="checkbox"]:checked ~ .checkmark:before{
+  display: block;
+}
+
+.wrapper .form .inputfield .btn{
+
+  width: 100%;
+ margin:auto;  
+ font-style:bold;
+  font-size: 17px; 
+  border: 0px;
+  background:  #fec107;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 10px;
+  outline: none;
+  height: 50px;
+  text-align: center;
+  vertical-align: center;
+   justify-content: space-between;
+}
+
+
+.wrapper .form .inputfield1 .btn{
+
+  width: 100%;
+ margin:auto;  
+ font-style:bold;
+  font-size: 17px; 
+  border: 0px;
+  background:  #fec107;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 10px;
+  outline: none;
+  height: 50px;
+  text-align: top;
+  vertical-align: center;
+   justify-content: space-between;
+}
+
+.wrapper .form .inputfield1 .btn-container,
+.wrapper .form .inputfield .btn-container {
+  width: 50%;
+  
+  justify-content: space-between;
+}
+
+/* .btn-container ��Ÿ�� */
+.btn-container {
+
+  gap: 20px; /* ���ϴ� ��ư ������ ���� ���� */
+}
+
+/* .btn ��Ÿ�� */
+.btn {
+  font-style: bold;
+  font-size: 17px;
+  border: 0px;
+  background: #fec107;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 10px;
+  outline: none;
+  height: 50px;
+  text-align: center;
+  vertical-align: center;
+  margin-right: 20px; /* ��ư ������ ������ 10px�� ���� */
+}
+
+
+.wrapper .form .phonefield .btn{
+  width: 100%;
+   padding: 8px 10px;
+  font-size: 15px; 
+  border: 0px;
+  background:  #fec107;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 10px;
+  outline: none;
+  height: 10px;
+}
+
+.wrapper .form .inputfield1 .btn:hover,
+.wrapper .form .inputfield .btn:hover{
+  background: #ffd658;
+}
+
+.wrapper .form .inputfield1:last-child,
+.wrapper .form .inputfield:last-child{
+  margin-bottom: 0;
+}
+
+@media (max-width:420px) {
+.wrapper .form .inputfield1,
+  .wrapper .form .inputfield{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+   .wrapper .form .inputfield1 label,
+  .wrapper .form .inputfield label{
+    margin-bottom: 5px;
+  }
+  
+   .wrapper .form .inputfield1.terms,
+  .wrapper .form .inputfield.terms{
+    flex-direction: row;
+  }
+}
+
+@media (max-width:420px) {
+  .wrapper .form .phonefield{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .wrapper .form .phonefield label{
+    margin-bottom: 5px;
+  }
+  .wrapper .form .phonefield.terms{
+    flex-direction: row;
+  }
+}
+
+
+.radio-buttons {
+  display: flex;
+  gap: 15px; /* ���� ��ư�� �۾��� ������ ���� ���� */
+  align-items: center; /* ���� ��ư�� �۾����� ���� ���� */
+}
+
+/* ���� ��ư ��Ÿ�� */
+.radio-buttons input[type="radio"] {
+  width: 20px;
+  height: 20px;
+   margin-right: 5px;
+}
+
+/* �۾� ��Ÿ�� */
+.radio-item {
+  display: flex;
+  align-items: center;
+}
+
+.radio-label {
+  font-size: 16px;
+  font-weight: 700;
+  font-style: bold;
+  color: #595959;
+}
+
+.inputfield1 .input-group,
+.inputfield .input-group {
+  display: flex;
+  align-items: center; /* ��ǲ�ڽ��� ����Ʈ ��ư�� ���� ���� */
+}
+.inputfield1 .input-group .input,
+.inputfield .input-group .input {
+  margin-right: 10px;
+}
+
+.inputfield1 .custom_select .input1,
+.inputfield .custom_select .input1 {
+  margin-right: 10px;
+  margin-left: 10px;
+  width: 30%;
+}
+
+
+.wrapper .form .inputfield input[type="radio"] {
+  width: 20px;
+  height: 20px;
+  padding-right: 10px;
+}
+
+.wrapper .form .inputfield input[type="radio"]:checked {
+  background-color: #fed932; /* ���ϴ� �������� ���� */
+  
+  /* �޴�����ȣ ��ü ���� */
+/* �޴�����ȣ ��ü ���� */
+.phonefield {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px; /* ���ϴ� ���� ���� */
+}
+
+.phonefield select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  width: 15%;
+  height: 100%;
+  border: 1px solid #d5dbd9;
+  border-radius: 3px;
+  text-align: center;
+  padding: 8px 10px;
+  font-size: 15px;
+  margin-right: 5px; /* ���ϴ� ���� ���� */
+}
+
+.phonefield .input1 {
+  width: 70%;
+  outline: none;
+  border: 1px solid #d5dbd9;
+  font-size: 15px;
+  padding: 8px 10px;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+.phonefield .input1:focus {
+  border: 1px solid #fec107;
+}
+
+
+
+.wrapper .form .phonefield label{
+   width: 200px;
+   color: #595959;
+   margin-right: 10px;
+  font-size: 16px;
+  font-style: bold;
+  font-weight: 700;
+}
