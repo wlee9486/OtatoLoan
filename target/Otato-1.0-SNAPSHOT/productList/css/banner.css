@@ -1,0 +1,522 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+@font-face {
+    font-family: 'LINESeedKR-Bd';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Bd.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+
+@font-face {
+    font-family: 'SUIT-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Bold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+header{
+	
+	 font-family: 'LINESeedKR-Bd';
+
+}
+
+
+body{
+	line-height: 1.5;
+	font-family: 'LINESeedKR-Bd';
+	font-family: 'Poppins', sans-serif;
+	
+	overflow-x: hidden;
+}
+*{
+	margin:0;
+	box-sizing: border-box;
+}
+:before,:after{
+	box-sizing: border-box;
+}
+.container{
+	max-width: 1200px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+
+
+.v-center{
+	align-items: center;
+justify-content: space-between;
+}
+ul{
+	list-style: none;
+	margin:0;
+	padding:0;
+}
+a{
+	text-decoration: none;
+}
+/* header */
+.header{
+	display: block;
+	width: 100%;
+	position: relative;
+	z-index: 99;
+	padding:15px;
+}
+
+.header.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #ffffff; /* 헤더의 배경색을 변경해 주세요 */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 선택적으로 그림자 효과를 추가할 수 있습니다. */
+  z-index: 999; /* 다른 요소들보다 위에 표시하기 위한 z-index 값 */
+}
+
+
+.header-item {
+  flex: ; /* 요소들의 간격을 일정하게 맞추기 위해 flex 속성 추가 */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.header .item-left{
+	flex:0 0 15%;
+}
+
+/* 추가적으로, 로고와 메뉴 사이의 간격도 조정할 수 있습니다 */
+.header .item-left .logo{
+  margin-right: 20px; /* 로고와 메뉴 사이의 간격을 조정 */
+}
+.header .logo a{
+	
+	color:#000000;
+	
+	text-decoration: none;
+}
+.header .item-center {
+  
+  font-family: 'SUIT-Bold';
+  font-size: 15pt;
+  flex: 1; /* flex 속성의 값을 늘려서 너비를 늘립니다. */
+  justify-content: space-between;
+  padding: 0 50px; /* 좌우 여백을 10px로 줄입니다. */
+}
+.header .item-center a {
+
+  margin-left: 20px; /* 글씨 간의 왼쪽 여백을 20px로 늘립니다. */
+  
+}
+
+.header .item-right{
+	flex:0 0 15%;
+	display: flex;
+	justify-content: flex-end;
+}
+.header .item-right a { 
+  text-decoration: none;
+  font-size: 14px; /* 로그인 글씨 크기를 조정합니다. */
+  color: #555555;
+  display: inline-block;
+  margin-left: 5px; /* 왼쪽 여백을 조정합니다. */
+  margin-right: 5px; /* 오른쪽 여백을 조정합니다. */
+  transition: color 0.3s ease;
+}
+.header .menu > ul > li{
+	display: inline-block;
+	line-height: 50px;
+	margin-left: 35px;
+}
+.header .menu > ul > li > a{
+	 font-family: 'SUIT-Bold';
+	font-size: 18px;
+	font-weight: 500;
+	color:#000000;
+	position: relative;
+	text-transform: capitalize;
+	transition: color 0.3s ease;
+}
+.header .menu > ul > li .sub-menu{
+	
+	position: absolute;
+	z-index: 500;
+	background-color:#ffffff;
+	box-shadow: -2px 2px 70px -25px rgba(0,0,0,0.3); 
+	padding: 20px 30px;
+	transition: all 0.5s ease;
+	margin-top:25px;
+	
+	opacity:0;
+	visibility: hidden;
+}
+
+.header .menu .sub-menu .title {
+  font-size: 18px; /* 배너 글씨조정 */
+}
+
+@media(min-width: 992px){
+.header .menu > ul > li.menu-item-has-children:hover .sub-menu{
+	margin-top: 0;
+	visibility: visible;
+	opacity: 1;
+}
+}
+.header .menu > ul > li .sub-menu > ul > li{
+	line-height: 1;
+}
+.header .menu > ul > li .sub-menu > ul > li > a{
+	display: inline-block;
+	padding: 10px 0;
+	font-size: 15px;
+	color: #555555;
+	transition: color 0.3s ease;
+	text-decoration: none;
+	text-transform: capitalize;
+}
+
+.header .menu > ul > li .sub-menu .list-item h4.title {
+  padding-left:10px;
+  text-align: left;
+}
+
+.header .menu > ul > li .single-column-menu{
+	min-width: 280px;
+	max-width: 350px;
+}
+.header .menu > ul > li .sub-menu.mega-menu > .list-item > ul > li{
+   line-height: 1;
+   display: block; 
+}
+.header .menu > ul > li .sub-menu.mega-menu > .list-item > ul > li > a {
+	padding:10px 0;
+	display: inline-block;
+	font-size: 15px;
+	color:#555555;
+	transition: color 0.3s ease;
+}
+.header .menu > ul > li .sub-menu.mega-menu{ 
+	
+    left: 50%;
+    transform: translateX(-50%);	
+}
+
+.header .menu > ul > li .sub-menu.mega-menu-column-4{
+  max-width: 100%;
+  width: 100%; 	
+  display: flex;
+  flex-wrap: wrap;
+ 
+text-align: left;
+  gap: 10px
+ 
+}
+.header .menu > ul > li .sub-menu.mega-menu-column-4 > .list-item{
+  flex:0 0 25%;
+  padding:30px 50px 0 ;
+  font-size: 9pt;
+  flex-grow: 1;
+  text-align: left;
+  
+}
+.header .menu > ul > li .sub-menu.mega-menu-column-4 > .list-item .title{ /*하위메뉴 굵은글씨부분*/
+	font-size: 18pt;
+	color:#fed932;
+	font-weight: 500;
+	line-height: 1;
+	padding:70px 30px 0; 
+	padding-bottom: 30px;
+	 text-align: left;
+}
+.header .menu > ul > li .sub-menu.mega-menu-column-4 > .list-item.text-center .title{
+	text-align: center;
+	
+	
+}
+
+.header .menu .sub-menu .separator {/* 세로 구분선 */
+    width: 1px;
+    height: 95%;
+    background-color: #ccc;
+    
+    display: inline-block; /* 세로 구분선을 보이도록 수정 */
+}
+
+
+.header .menu > ul > li .sub-menu.mega-menu-column-4 > .list-item img{ /*감대리사진*/
+	max-width: 230px;
+	width: 100%;
+	vertical-align: center;
+	margin-top: 0px;
+	margin-bottom: 20px;
+	margin-left: 150px;
+}
+
+.header .menu > ul > li .sub-menu.mega-menu-column-4 > .list-item-text img{ /*글씨사진*/
+ 	max-width: 450px;
+	width: 100%;
+	vertical-align: top;
+	margin-top: 0px;
+	margin-bottom: 200px;
+	margin-left: 20px;
+	margin-right: 20px;
+	width: 450px;
+
+ 
+}
+
+.header .menu > ul > li .sub-menu.mega-menu > .list-item > ul > li > a:hover,
+.header .menu > ul > li .sub-menu > ul > li > a:hover,
+.header .item-right a:hover,
+.header .menu > ul > li:hover > a{
+	color:#fed932;
+}
+/* banner section */
+.banner-section{
+  background-image: url('../img/banner.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 700px;
+  width: 100%;
+  display: block;
+}
+.mobile-menu-head,
+.mobile-menu-trigger{
+	display: none;
+}
+
+/*responsive*/
+@media(max-width: 991px){
+
+	.header .item-center{
+	
+		order:3;
+		flex:0 0 100%;
+	}
+	.header .item-left,
+	.header .item-right{
+		flex:0 0 auto;
+	}
+	.v-center{
+		justify-content: space-between;
+	}
+	.header .mobile-menu-trigger{
+		display: flex;
+		height: 30px;
+		width: 30px;
+		margin-left: 15px;
+		cursor: pointer;
+		align-items: center;
+		justify-content: center;
+	}
+	.header .mobile-menu-trigger span{
+		display: block;
+		height: 2px;
+		background-color: #333333;
+		width: 24px;
+		position: relative;
+	}
+	.header .mobile-menu-trigger span:before,
+	.header .mobile-menu-trigger span:after{
+		content: '';
+		position: absolute;
+		left:0;
+		width: 100%;
+		height: 100%;
+		background-color: #333333;
+	}
+	.header .mobile-menu-trigger span:before{
+		top:-6px;
+	}
+	.header .mobile-menu-trigger span:after{
+		top:6px;
+	}
+	.header .item-right{
+		align-items: center;
+	}
+
+	.header .menu{
+		
+		position: fixed;
+		width: 320px;
+		background-color:#ffffff;
+		left:0;
+		top:0;
+		height: 100%;
+		overflow: hidden;
+		transform: translate(-100%);
+		transition: all 0.5s ease;
+		z-index: 1099;
+	}
+	.header .menu.active{
+	   transform: translate(0%);	
+	}
+	.header .menu > ul > li{
+		line-height: 1;
+		margin:0;
+		display: block;
+		
+	}
+	.header .menu > ul > li > a{
+		line-height: 50px;
+		height: 50px;
+		padding:0 50px 0 15px;
+		display: block;
+		border-bottom: 1px solid rgba(0,0,0,0.1);
+	}
+	.header .menu > ul > li > a i{
+		position: absolute;
+		height: 50px;
+		width: 50px;
+		top:0;
+		right: 0;
+		text-align: center;
+		line-height: 50px;
+		transform: rotate(-90deg);
+	}
+	.header .menu .mobile-menu-head{
+		display: flex;
+		height: 50px;
+		border-bottom: 1px solid rgba(0,0,0,0.1);
+		justify-content: space-between;
+		align-items: center;
+		position: relative;
+		z-index: 501;
+		position: sticky;
+		background-color: #ffffff;
+		top:0;
+	}
+	.header .menu .mobile-menu-head .go-back{
+		height: 50px;
+		width: 50px;
+		border-right: 1px solid rgba(0,0,0,0.1);
+		cursor: pointer;
+		line-height: 50px;
+		text-align: center;
+		color:#000000;
+		font-size: 16px;
+		display: none;
+	}
+	.header .menu .mobile-menu-head.active .go-back{
+		display: block;
+	}
+	.header .menu .mobile-menu-head .current-menu-title{
+		font-size: 15px;
+		font-weight: 500;
+		color:#000000;
+	}
+	.header .menu .mobile-menu-head .mobile-menu-close{
+	    height: 50px;
+		width: 50px;
+		border-left: 1px solid rgba(0,0,0,0.1);
+		cursor: pointer;
+		line-height: 50px;
+		text-align: center;
+		color:#000000;	
+		font-size: 25px;
+	}
+	.header .menu .menu-main{ /*수정*/
+		height: 100%;
+		overflow-x: hidden;
+		overflow-y: auto;
+		display: flex; /* flex로 변경 */
+  		justify-content: space-between; /* 항목들 간격 자동 분배 */
+	}
+	.header .menu > ul > li .sub-menu.mega-menu,
+	.header .menu > ul > li .sub-menu{
+	
+		visibility: visible;
+		opacity: 1;
+		position: absolute;
+		box-shadow: none;
+		margin:0;
+		padding:15px;
+		top:0;
+		left:0;
+		width: 100%;
+		height: 50px;
+		padding-top: 65px;
+		max-width: none;
+		min-width: auto;
+		display: none;
+		transform: translateX(0%);
+		overflow-y: auto;
+	}
+.header .menu > ul > li .sub-menu.active{
+	display: block;
+}
+
+.header .menu > ul > li .sub-menu.mega-menu > .list-item > ul > li > a {
+  height: 50px; /* 원하는 높이로 변경 (예: 50px) */
+  line-height: 50px; /* 텍스트를 수직 중앙 정렬하기 위한 line-height 값 */
+}
+
+@keyframes slideLeft{
+	0%{
+		opacity:0;
+		transform: translateX(100%);
+	}
+	100%{
+	    opacity:1;
+		transform: translateX(0%);	
+	}
+}
+@keyframes slideRight{
+	0%{
+		opacity:1;
+		transform: translateX(0%);
+	}
+	100%{
+	    opacity:0;
+		transform: translateX(100%);	
+	}
+}
+	.header .menu > ul > li .sub-menu.mega-menu-column-4 > .list-item img{
+		margin-top:0;
+	}
+	.header .menu > ul > li .sub-menu.mega-menu-column-4 > .list-item.text-center .title{
+		margin-bottom: 20px;
+	}
+	.header .menu > ul > li .sub-menu.mega-menu-column-4 > .list-item.text-center:last-child .title{
+		margin-bottom:0px;
+	}
+	.header .menu > ul > li .sub-menu.mega-menu-column-4 > .list-item{
+		flex: 0 0 100%;
+        padding: 0px;
+	}
+	.header .menu > ul > li .sub-menu > ul > li > a,
+	.header .menu > ul > li .sub-menu.mega-menu > .list-item > ul > li > a{
+		display: block;
+	}
+	.header .menu > ul > li .sub-menu.mega-menu > .list-item > ul {
+		margin-bottom: 15px;
+		
+	}
+	.menu-overlay{
+		position: fixed;
+		background-color: rgba(0,0,0,0.5);
+		left:0;
+		top:0;
+		width: 100%;
+		height: 100%;
+		z-index: 1098;
+		visibility: hidden;
+		opacity:0;
+		transition: all 0.5s ease;
+		justify-content: space-between;
+	}
+	.menu-overlay.active{
+	  visibility: visible;
+	  opacity:1;	
+	}
+}
+
+

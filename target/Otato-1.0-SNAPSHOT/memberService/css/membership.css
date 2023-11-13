@@ -1,0 +1,394 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'OTWelcomeRA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/OTWelcomeRA.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@keyframes flip {
+    0% {
+        transform: rotateY(0);
+    }
+    100% {
+        transform: rotateY(-180deg);
+    }
+}
+
+lbody {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #f1f2e6;
+}
+
+.loader {
+    width: 65px;
+    margin: auto;
+    transform: translateY(-50%);
+}
+
+.loader__image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.loader__coin {
+    animation: flip 0.5s ease-in-out infinite alternate-reverse both;
+}
+
+.pill {
+    height: 0;
+    border-radius: 2px;
+    color: #10a05b;
+    border: 2px solid currentColor;
+    width: 50%;
+    position: absolute;
+    top: 54%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.fon1 {
+    font-family: 'OTWelcomeRA';
+    font-size: 20pt;
+    text-align: center;
+
+}
+
+input[type="text"] {
+    border: none;
+    font-family: 'OTWelcomeRA';
+    font-size: 30pt;
+    text-align: center; /* 추가: 텍스트를 가운데 정렬 */
+    display: block; /* 추가: 인풋을 블록 레벨 요소로 변경하여 가로 중앙 정렬 */
+    margin: 0 auto; /* 추가: 왼쪽과 오른쪽으로 자동으로 마진을 추가하여 수평 중앙 정렬 */
+    background-color: transparent; /* 배경색을 투명으로 설정 */
+    justify-content: center; /* 가로 가운데 정렬 */
+    align-items: center; /* 세로 가운데 정렬 */
+
+}
+
+input:focus {
+    outline: none;
+}
+
+
+/* 테이블 속성 */
+@font-face {
+    font-family: 'OTWelcomeRA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/OTWelcomeRA.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+table {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #ECE9E9;
+    border-bottom: 1px solid #cfcfcf;
+    font-size: 13pt;
+    padding: 5pt;
+    font-family: 'OTWelcomeRA';
+    height: 60pt;
+    text-align: center;
+}
+
+trfont { /* cell */
+    padding: 0.75rem;
+    font-size: 1rem;
+    font-family: 'OTWelcomeRA';
+    text-align: center;
+}
+
+.thfont { /* header cell */
+
+    weight: 100%;
+    font-family: 'OTWelcomeRA';
+    text-align: center;
+    color: #272838;
+    border-bottom: 2px solid #fed932;
+    position: sticky;
+    top: 0;
+    background-color: #F9F8F8;
+    font-size: 15pt;
+    padding: 5pt;
+}
+
+td { /* body cell */
+    color: #7E7F9A;
+}
+
+/* demo stuff */
+.bbody {
+    padding: 6rem 2rem;
+    background-color: #F9F8F8;
+}
+
+.bg-1f4 {
+    font-family: SUIT-Bold;
+    font-size: 12pt;
+
+}
+
+/* charge 충전 */
+cbody {
+    font-family: system-ui;
+    font-variant-numeric: tabular-nums;
+    max-width: 40rem;
+    margin: 0 auto;
+    padding: 4rem;
+}
+
+.cpills {
+    display: flex;
+
+}
+
+
+
+clabel {
+    display: grid;
+    place-content: center;
+    border-left: 1px solid;
+    padding: 0.5rem;
+    font-weight: 600;
+    line-height: 1;
+    background-color: grey;
+    color: white;
+}
+
+clabel:first-of-type {
+    border-left: 0;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+clabel:last-of-type {
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+@media (min-width: 40rem) {
+    /* Spread the buttons out on desktop */
+    .cpills {
+        column-gap: clamp(0.25rem, 0.25rem + 2vw, 1rem);
+        row-gap: 0.5rem;
+        flex-wrap: wrap;
+    }
+
+    clabel {
+        border-radius: 999px !important;
+        padding: 0.5rem 0.75rem;
+    }
+}
+
+
+
+cfieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+clegend {
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+/* charge 텍스트박스 */
+
+/* Form Styles */s
+.formgroup {
+    font-family: 'OTWelcomeRA';
+    position: relative;
+    padding: 15px 0 0;
+    margin-top: 10px;
+    width: 40%;
+    justify-content: center; /* 가로 가운데 정렬 */
+    align-items: center; /* 세로 가운데 정렬 */
+    font-size: 30pt;
+    text-align: center;
+}
+
+.formfield {
+    font-family: 'OTWelcomeRA', sans-serif;
+    width: 250pt;
+    border: 0;
+    outline: 0;
+    color: var(--white);
+    padding: 5px;
+    background: transparent;
+    transition: border-color 0.2s;
+    border-bottom: 2px solid #fed932;
+    justify-content: center; /* 가로 가운데 정렬 */
+    align-items: center; /* 세로 가운데 정렬 */
+}
+
+/* 상환 및 충전완료 화면 */
+@import url("https://fonts.googleapis.com/css?family=Ek+Mukta:400,300,500,700,800");
+cbody {
+    font-family: 'Ek Mukta', sans-serif;
+    background: #fff59d;
+}
+
+.coin {
+    margin: -50px 0 0 -50px;
+    width: 100px;
+    height: 100px;
+    -ms-transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    animation: coin 2s linear infinite;
+}
+
+.coin .front {
+    width: 100%;
+    height: 100%;
+
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.coin .back {
+    width: 100%;
+    height: 100%;
+    background: #f7941e;
+    border-radius: 50%;
+    transform: rotateY(180deg) translateZ(10px);
+    -webkit-transform: rotateY(180deg) translateZ(10px);
+    -ms-transform: rotateY(180deg) translateZ(10px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.coin .front_b {
+    width: 100%;
+    height: 100%;
+    background: #f7941e;
+    border-radius: 50%;
+    transform: translateZ(-1px);
+    -webkit-transform: translateZ(-1px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.coin .back_b {
+    width: 100%;
+    height: 100%;
+    background: #f7941e;
+    border-radius: 50%;
+    transform: translateZ(-9px);
+    -webkit-transform: translateZ(-9px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+}
+
+.coin:before {
+    content: "";
+    margin-left: -5px;
+    width: 10px;
+    height: 100%;
+    background: #f7941e;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 1;
+    -webkit-transform: rotateY(-90deg);
+    -webkit-transform-origin: 100% 50%;
+    transform: rotateY(-90deg);
+    transform-origin: 100% 50%;
+}
+
+.coin .front_b:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border: 10px solid #fbb041;
+    border-radius: 50%;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+
+.coin .front_b:after {
+    content: "$";
+    padding: 12px 0 0 0;
+    width: 100%;
+    height: 100%;
+    font-size: 5em;
+    font-weight: bold;
+    color: #fbb041;
+    line-height: 1;
+    text-align: center;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 4;
+}
+
+.coin .back:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border: 10px solid #fbb041;
+    border-radius: 50%;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -3;
+}
+
+.coin .back:after {
+    content: "100";
+    padding: 27px 0 0 0;
+    width: 100%;
+    height: 100%;
+    font-size: 3em;
+    font-weight: bold;
+    color: #fbb041;
+    line-height: 1;
+    text-align: center;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -4;
+}
+
+@keyframes coin {
+    0% {
+        transform: rotateY(0);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+

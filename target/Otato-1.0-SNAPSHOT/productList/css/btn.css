@@ -1,0 +1,196 @@
+
+/* Common button styles */
+
+@font-face {
+    font-family: 'Tenada';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-2@1.0/Tenada.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+	font-family: 'Playfair Display', serif;
+  	src: url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'SEBANG_Gothic_Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2104@1.0/SEBANG_Gothic_Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SUIT-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Bold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'LINESeedKR-Bd';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Bd.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ChosunGs';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/ChosunGs.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'KBO-Dia-Gothic_bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/KBO-Dia-Gothic_bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+.button {
+  float: left;
+  min-width: 150px;
+  max-width: 250px;
+  display: block;
+  margin: 1em;
+  padding: 1em 2em;
+  border: none;
+  background: none;
+  color: inherit;
+  vertical-align: middle;
+  position: relative;
+  z-index: 1;
+  -webkit-backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+}
+.button:focus {
+  outline: none;
+}
+.button > span {
+  vertical-align: middle;
+}
+
+
+/*  簢     ư */
+
+.bg-1  {
+  color: #37474f;
+  border-color: #37474f;
+}
+/* 버튼 스타일 적용 시작 */
+
+.bg-1f{
+font-family: Tenada;
+font-size: 12pt;
+}
+.bg-1f2{
+font-family: Playfair Display;
+font-size: 12pt;
+}
+.bg-1f3{
+font-family: SEBANG_Gothic_Bold;
+font-size: 12pt;
+}
+.bg-1f4{
+font-family: SUIT-Bold;
+font-size: 12pt;
+}
+.bg-1f5{
+font-family: LINESeedKR-Bd;
+font-size: 18pt;
+}
+.bg-1f6{
+font-family: ChosunGs;
+font-size: 12pt;
+}
+.bg-1f7{
+font-family: KBO-Dia-Gothic_bold;
+font-size: 12pt;
+}
+
+/*  簢     ư Borders */
+.button--border-thin {
+   font-weight: 600;
+  border: 2px solid;
+}
+
+
+
+/* Ÿ    ư */
+
+.bg-2  {
+  color: #37474f;
+  border-color: #37474f;
+  
+}
+
+/* Ÿ     ư Borders */
+.button--round-s {
+  border-radius: 30px;
+   border: 3px solid;
+   font-weight: 600;
+}
+
+/* Ujarak 흰색 => 노란색 */
+.button--ujarak {
+  -webkit-transition: border-color 0.4s, color 0.4s;
+  transition: border-color 0.4s, color 0.4s;
+}
+.button--ujarak::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+/*  클릭 후 배경 색 변경주고 싶을 때 */
+/* 로고 노란색: #fed932 */
+/* 인디고블루 #37474F */
+  background: #37474F;
+  z-index: -1;
+  opacity: 0;
+  -webkit-transform: scale3d(0.7, 1, 1);
+  transform: scale3d(0.7, 1, 1);
+  -webkit-transition: -webkit-transform 0.4s, opacity 0.4s;
+  transition: transform 0.4s, opacity 0.4s;
+  -webkit-transition-timing-function: cubic-bezier(0.5, 1, 0.3, 1);
+  transition-timing-function: cubic-bezier(0.5, 1, 0.3, 1);
+}
+
+.button--ujarak.button--round-s::before {
+  border-radius: 30px;
+}
+
+.button--ujarak,
+.button--ujarak::before {
+  -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+  transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+}
+/*  클릭 후 글자 색 변경주고 싶을 때 */
+/* 로고 노란색: #fed932 */
+/* 인디고블루 #37474F */
+
+.button--ujarak:hover {
+  color: #fed932;
+  border-color: #37474f;
+}
+
+/*.button--ujarak:hover {
+  color: #37474F;
+  border-color: #37474f;
+}*/
+
+.button--ujarak.button--inverted:hover {
+  color: #37474F;
+  border-color: #fff;
+}
+.button--ujarak:hover::before {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+

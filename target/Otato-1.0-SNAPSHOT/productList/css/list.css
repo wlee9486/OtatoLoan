@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+.btn1{
+	
+	width: 50%;
+    padding: 14px 0;
+    border-radius: 6px;
+    border: 1px solid rgba(0,0,0,.05);
+    background: #09aa5c;
+    font-size: 18px;
+    line-height: 22px;
+    color: #fff;
+	
+}
+
+.select {
+    padding: 15px 10px;
+}
+.pctitle {
+font-family: 'OTWelcomeRA';
+    padding-left: 10pt;
+    padding-top: 8pt;
+font-size: 17pt;	
+}
+.pc{
+font-family: 'OTWelcomeRA';
+font-size: 14pt;
+width: 80pt;
+height : 45px;
+border: 1px solid #EAE7E7;
+border-radius: 40px;
+  display: flex;
+  justify-content: center; /* Center the text horizontally */
+  align-items: center; /* Center the text vertically */	
+}
+.pc input[type="radio"]{
+    display: none;
+}
+.pc input[type="radio"] + span{
+        display: inline-block;
+        border-radius: 40px;
+        padding: 10px 10px;
+        margin: 0 auto;
+        height : 45px;
+        width: 80pt;
+        border: 1px solid #dfdfdf;
+        background-color: #ffffff;
+        text-align: center;
+        cursor: pointer;
+        line-height: 45px;
+          display: flex;
+  justify-content: center; /* Center the text horizontally */
+  align-items: center; /* Center the text vertically */
+}
+.pc input[type="radio"] + span{
+    background-color: #fff;
+    color: #333;
+}
+.pc input[type="radio"]:checked + span{
+    background-color: #fed932;
+    color: black;
+}
+
+.div_mid{
+	border: 1px solid #868686;
+}
+
+
+.plist{
+	border: 1px solid #868686;
+	
+}

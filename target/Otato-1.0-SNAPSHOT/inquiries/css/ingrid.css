@@ -1,0 +1,94 @@
+@charset "UTF-8";/* 諛섏쓳 援ы쁽 */
+.wrapper {
+  max-width: 1024px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.aline{
+  text-align: center;
+  text-decoration: none; /* 留곹겕�쓽 諛묒쨪 �젣嫄� */
+  color: inherit; /* 留곹겕�쓽 �깋�긽 �젣嫄� */
+}
+
+.container{
+
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(3, 1fr);
+	max-width: 1200px;
+	margin:auto;
+	}
+.item1 {
+	height: 80px;
+}
+.item2 {
+	padding: 10pt;
+}
+.item3 {
+}
+@font-face {
+    font-family: 'GangwonEduPowerExtraBoldA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduPowerExtraBoldA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'EF_ladio';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-01@1.0/EF_ladio.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'OTWelcomeRA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/OTWelcomeRA.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+.ctitle {
+	font-family: 'EF_ladio';
+	font-size: 25pt;
+	padding-top: 22pt;
+}
+.csubtitle {
+	font-family: 'OTWelcomeRA';
+	font-size: 20pt;
+	padding-top: 10px;
+}
+
+/* 援щ텇�꽑 �냽�꽦 */
+.hr-1 {
+  border: 0;
+  height: 2px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+.hr-3 {
+  border: 0;
+  height: 0;
+  border-top: 1px solid #8c8c8c;
+}
+/* ���씠�� �슦痢� �븞�궡猷⑦듃 */
+.root{
+	font-family: 'OTWelcomeRA';
+	text-align: right;
+	padding-right: 20pt;
+	font-size: 15pt;
+}
+
+/* �꽮�뀡2 (�븘�떚�겢 �뿤�뜑 �쁺�뿭) */
+.banner-section {
+  /* �뿬湲곗뿉 �꽮�뀡2�뿉 ���븳 �뒪���씪�쓣 異붽��빀�땲�떎. */
+}
+
+/* �븘�떚�겢 �쁺�뿭 */
+article {
+  /* �뿬湲곗뿉 �븘�떚�겢 �쁺�뿭�뿉 ���븳 �뒪���씪�쓣 異붽��빀�땲�떎. */
+}
+
+/* �궗�씠�뱶諛� (aside) �쁺�뿭 */
+aside.nav {
+  /* �뿬湲곗뿉 �궗�씠�뱶諛붿뿉 ���븳 �뒪���씪�쓣 異붽��빀�땲�떎. */
+}
+
+}
